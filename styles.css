@@ -370,6 +370,127 @@ section {
     margin-top: 1rem;
 }
 
+/* Benchmarks Section */
+.benchmarks-section {
+    background: rgba(255, 118, 64, 0.02);
+}
+
+.benchmarks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.benchmark-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-light);
+    transition: var(--transition);
+}
+
+.benchmark-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.benchmark-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.benchmark-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.benchmark-score {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.benchmark-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.benchmark-comparison {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-light);
+}
+
+.benchmark-comparison h3 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.comparison-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.comparison-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.model-name {
+    min-width: 150px;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.performance-bar {
+    flex: 1;
+    height: 30px;
+    background: rgba(0, 83, 66, 0.1);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 15px;
+    position: relative;
+    transition: width 2s ease-in-out;
+}
+
+.bar-fill.sleep-llm {
+    background: var(--gradient-primary);
+}
+
+.bar-fill.competitor {
+    background: linear-gradient(135deg, #666666 0%, #888888 100%);
+}
+
+.bar-fill.baseline {
+    background: linear-gradient(135deg, #cccccc 0%, #dddddd 100%);
+}
+
+.score {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    color: white;
+    font-size: 0.9rem;
+}
+
 /* Security Section */
 .security-section {
     background: white;
@@ -658,6 +779,7 @@ section {
     }
     
     .architecture-grid,
+    .benchmarks-grid,
     .security-grid,
     .enterprise-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -702,6 +824,7 @@ section {
     }
     
     .architecture-grid,
+    .benchmarks-grid,
     .security-grid,
     .enterprise-grid {
         grid-template-columns: 1fr;
