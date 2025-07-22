@@ -1,0 +1,228 @@
+/* Use Cases Page Styles */
+
+.use-cases-overview {
+    padding: var(--space-4xl) 0;
+}
+
+.overview-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xl);
+}
+
+.use-case-card.featured {
+    background: var(--color-surface);
+    padding: var(--space-3xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
+}
+
+.use-case-icon {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-lg);
+}
+
+.use-case-description {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2xl);
+}
+
+.capabilities {
+    margin: var(--space-2xl) 0;
+}
+
+.capabilities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.capabilities li {
+    padding: var(--space-sm) 0;
+    padding-left: var(--space-lg);
+    position: relative;
+}
+
+.capabilities li::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+}
+
+.use-case-example {
+    background: var(--color-background);
+    padding: var(--space-xl);
+    border-radius: var(--radius-md);
+    margin: var(--space-xl) 0;
+}
+
+.example-card {
+    margin-top: var(--space-md);
+}
+
+.example-source {
+    font-style: italic;
+    color: var(--color-text-light);
+    font-size: var(--text-sm);
+}
+
+.code-block {
+    background: #1a1a1a;
+    color: #e6e6e6;
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    font-family: var(--font-mono);
+    overflow-x: auto;
+}
+
+.api-example {
+    margin: var(--space-xl) 0;
+}
+
+.research-example {
+    margin: var(--space-xl) 0;
+}
+
+.paper-preview {
+    background: var(--color-background);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    margin-top: var(--space-md);
+}
+
+.industry-applications {
+    padding: var(--space-4xl) 0;
+    background: var(--color-background);
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.industry-card {
+    background: var(--color-surface);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+}
+
+.success-stories {
+    padding: var(--space-4xl) 0;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.story-card {
+    background: var(--color-surface);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
+}
+
+.story-header {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.story-metrics {
+    display: flex;
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric .number {
+    display: block;
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.metric .label {
+    font-size: var(--text-sm);
+    color: var(--color-text-light);
+}
+
+.implementation-guide {
+    padding: var(--space-4xl) 0;
+    background: var(--color-background);
+}
+
+.implementation-steps {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2xl);
+    margin-top: var(--space-2xl);
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    max-width: 300px;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--text-xl);
+}
+
+.use-cases-cta {
+    background: var(--gradient-primary);
+    color: white;
+    padding: var(--space-4xl) 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    color: white;
+    margin-bottom: var(--space-md);
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-2xl);
+}
+
+.cta-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .industry-grid,
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .implementation-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .story-metrics {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+}

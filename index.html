@@ -4,361 +4,626 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <title>Naptick Sleep LLM - Own Your Night</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Naptick Sleep LLM - The world's first domain-specific AI model for sleep science. Transforming sleep health through research-validated artificial intelligence.">
+    <title>Naptick Sleep LLM - Advancing Sleep Science with AI</title>
+    
+    <!-- Academic Font Stack -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/research-base.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>📢 New Research: Sleep LLM achieves 94.2% accuracy in sleep stage classification. <a href="pages/research.html#latest">Read the paper →</a></p>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Naptick</h2>
+            <div class="nav-brand">
+                <a href="/" class="logo">
+                    <span class="logo-text">Naptick</span>
+                    <span class="logo-tagline">Sleep LLM</span>
+                </a>
             </div>
+            
             <ul class="nav-menu">
-                <li><a href="#model" class="nav-link">Model</a></li>
-                <li><a href="#benchmarks" class="nav-link">Benchmarks</a></li>
-                <li><a href="#security" class="nav-link">Security</a></li>
-                <li><a href="#researchers" class="nav-link">Researchers</a></li>
-                <li><a href="#enterprise" class="nav-link">Enterprise</a></li>
-                <li><a href="#alpha" class="nav-link cta-nav">Join Alpha</a></li>
+                <li class="nav-item">
+                    <a href="pages/research.html" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/platform.html" class="nav-link">Platform</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/use-cases.html" class="nav-link">Use Cases</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item nav-cta">
+                    <a href="#alpha-access" class="btn-primary-nav">Get Access</a>
+                </li>
             </ul>
-            <div class="hamburger">
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Own Your Night with the World's First <span class="highlight">Sleep LLM</span></h1>
-                <p class="hero-subtitle">A domain-specific large language model for sleep science. Multimodal. Research-validated. Built for impact.</p>
-                
-                <div class="hero-metrics">
-                    <div class="metric">
-                        <span class="metric-number">120M+</span>
-                        <span class="metric-label">sleep episodes processed</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-number">HIPAA-grade</span>
-                        <span class="metric-label">privacy compliance</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-number">Sigstore-signed</span>
-                        <span class="metric-label">model artifacts</span>
-                    </div>
-                </div>
-
-                <div class="hero-cta">
-                    <button class="btn-primary">Get Research Sandbox Key</button>
-                    <button class="btn-secondary">Read the Technical Whitepaper</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Model Architecture Section -->
-    <section id="model" class="model-section">
+    <!-- Hero Section with Research Focus -->
+    <section class="hero-research">
         <div class="container">
-            <div class="section-header">
-                <h2>Model Architecture</h2>
-                <p>A custom transformer trained on multimodal time-series sleep data from clinical and wearable sources.</p>
-            </div>
-            
-            <div class="architecture-grid">
-                <div class="arch-component">
-                    <div class="component-icon">🧠</div>
-                    <h3>Foundation Transformer</h3>
-                    <p>Core neural architecture optimized for sleep pattern recognition</p>
-                </div>
-                <div class="arch-component">
-                    <div class="component-icon">📊</div>
-                    <h3>Time-series Encoders</h3>
-                    <p>Advanced processing of temporal sleep data patterns</p>
-                </div>
-                <div class="arch-component">
-                    <div class="component-icon">🌙</div>
-                    <h3>Context Ribbon</h3>
-                    <p>Caffeine, medications, light exposure integration</p>
-                </div>
-                <div class="arch-component">
-                    <div class="component-icon">🎯</div>
-                    <h3>Task-specific Heads</h3>
-                    <p>Sleep staging, apnea prediction, coaching module</p>
-                </div>
-            </div>
-
-            <div class="model-card">
-                <h3>Model Card</h3>
-                <p>Available for download</p>
-                <div class="download-buttons">
-                    <button class="btn-outline">JSON</button>
-                    <button class="btn-outline">PDF</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benchmarks Section -->
-    <section id="benchmarks" class="benchmarks-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Benchmarks & Performance</h2>
-                <p>Sleep LLM outperforms existing models across key sleep science metrics</p>
-            </div>
-            
-            <div class="benchmarks-grid">
-                <div class="benchmark-card">
-                    <div class="benchmark-icon">📊</div>
-                    <h3>Sleep Stage Accuracy</h3>
-                    <div class="benchmark-score">94.2%</div>
-                    <p>vs. 87.3% industry standard</p>
-                </div>
-                <div class="benchmark-card">
-                    <div class="benchmark-icon">🫁</div>
-                    <h3>Apnea Detection</h3>
-                    <div class="benchmark-score">96.8%</div>
-                    <p>vs. 91.5% existing models</p>
-                </div>
-                <div class="benchmark-card">
-                    <div class="benchmark-icon">⚡</div>
-                    <h3>Inference Speed</h3>
-                    <div class="benchmark-score">12ms</div>
-                    <p>Real-time processing capability</p>
-                </div>
-                <div class="benchmark-card">
-                    <div class="benchmark-icon">🎯</div>
-                    <h3>Clinical Validation</h3>
-                    <div class="benchmark-score">98.1%</div>
-                    <p>Agreement with sleep specialists</p>
-                </div>
-            </div>
-
-            <div class="benchmark-comparison">
-                <h3>Model Comparison</h3>
-                <div class="comparison-chart">
-                    <div class="comparison-item">
-                        <span class="model-name">Sleep LLM</span>
-                        <div class="performance-bar">
-                            <div class="bar-fill sleep-llm" style="width: 94%"></div>
-                            <span class="score">94.2%</span>
-                        </div>
-                    </div>
-                    <div class="comparison-item">
-                        <span class="model-name">DeepSleep-v2</span>
-                        <div class="performance-bar">
-                            <div class="bar-fill competitor" style="width: 87%"></div>
-                            <span class="score">87.3%</span>
-                        </div>
-                    </div>
-                    <div class="comparison-item">
-                        <span class="model-name">SleepNet</span>
-                        <div class="performance-bar">
-                            <div class="bar-fill competitor" style="width: 84%"></div>
-                            <span class="score">84.1%</span>
-                        </div>
-                    </div>
-                    <div class="comparison-item">
-                        <span class="model-name">Traditional PSG</span>
-                        <div class="performance-bar">
-                            <div class="bar-fill baseline" style="width: 82%"></div>
-                            <span class="score">82.6%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust & Security Section -->
-    <section id="security" class="security-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Trust & Security</h2>
-                <p>Enterprise-grade security and compliance for your most sensitive data</p>
-            </div>
-            
-            <div class="security-grid">
-                <div class="security-feature">
-                    <div class="security-icon">🔒</div>
-                    <h3>End-to-end Encryption</h3>
-                    <p>TLS 1.3 in transit, AES-256 at rest</p>
-                </div>
-                <div class="security-feature">
-                    <div class="security-icon">✅</div>
-                    <h3>GDPR & HIPAA Compliance</h3>
-                    <p>Full regulatory compliance maintained</p>
-                </div>
-                <div class="security-feature">
-                    <div class="security-icon">🌍</div>
-                    <h3>Regional Data Storage</h3>
-                    <p>U.S.-East or EU-Central secure cloud</p>
-                </div>
-                <div class="security-feature">
-                    <div class="security-icon">🔐</div>
-                    <h3>Sigstore Verification</h3>
-                    <p>Model artifacts signed and verified via Rekor logs</p>
-                </div>
-                <div class="security-feature">
-                    <div class="security-icon">📋</div>
-                    <h3>SOC 2 Readiness</h3>
-                    <p>Currently in progress</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Researcher Sandbox Section -->
-    <section id="researchers" class="researchers-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Researcher Sandbox</h2>
-                <p>Apply with ORCID / Academic Email for exclusive research access</p>
-            </div>
-            
-            <div class="research-content">
-                <div class="research-features">
-                    <div class="feature">
-                        <h3>Jupyter-like Interface</h3>
-                        <p>Familiar environment with powerful REST API access</p>
-                    </div>
-                    <div class="feature">
-                        <h3>Secure Data Upload</h3>
-                        <p>Upload data securely and fine-tune your own version</p>
-                    </div>
-                    <div class="feature">
-                        <h3>CLI / Python SDK</h3>
-                        <p>Comprehensive tools for seamless integrations</p>
-                    </div>
-                </div>
-
-                <div class="use-cases">
-                    <h3>Use Cases</h3>
-                    <ul>
-                        <li>Sleep lab analysis</li>
-                        <li>Research summaries</li>
-                        <li>Coaching insights from wearable feeds</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Enterprise Section -->
-    <section id="enterprise" class="enterprise-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Enterprise & VC Corner</h2>
-                <p>Strategic insights and comprehensive documentation for decision makers</p>
-            </div>
-            
-            <div class="enterprise-grid">
-                <div class="enterprise-card">
-                    <h3>Market Analysis</h3>
-                    <p>Infographic on market size and strategic impact</p>
-                    <button class="btn-outline">View Infographic</button>
-                </div>
-                <div class="enterprise-card">
-                    <h3>Executive Summary</h3>
-                    <p>1-page summary deck for quick overview</p>
-                    <button class="btn-outline">Download Deck</button>
-                </div>
-                <div class="enterprise-card">
-                    <h3>Technical Documentation</h3>
-                    <p>Comprehensive whitepaper and SOC 2 letter</p>
-                    <button class="btn-outline">Download Papers</button>
-                </div>
-                <div class="enterprise-card">
-                    <h3>Clinical Data</h3>
-                    <p>Pilot data snapshot and product milestones</p>
-                    <button class="btn-outline">View Timeline</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Alpha Signup Section -->
-    <section id="alpha" class="alpha-section">
-        <div class="container">
-            <div class="alpha-content">
-                <div class="alpha-info">
-                    <h2>Join the Alpha</h2>
-                    <p>Be among the first 25 collaborators to access our Sleep LLM platform.</p>
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="research-badge">Stanford-Incubated • VC-Backed • Research-First</div>
                     
-                    <div class="ideal-for">
-                        <h3>Ideal for:</h3>
-                        <ul>
-                            <li>Sleep clinics and labs</li>
-                            <li>Wellness tech apps</li>
-                            <li>AI researchers focused on biosignals</li>
-                        </ul>
+                    <h1 class="hero-title">
+                        The World's First <span class="gradient-text">Domain-Specific LLM</span> for Sleep Science
+                    </h1>
+                    
+                    <p class="hero-lead">
+                        Naptick Sleep LLM transforms 120+ million nights of sleep data into actionable insights. 
+                        Our specialized AI model understands sleep patterns, disorders, and interventions with 
+                        unprecedented accuracy—enabling breakthroughs in research and personalized health.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">120M+</div>
+                            <div class="stat-label">Sleep Episodes Analyzed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">94.2%</div>
+                            <div class="stat-label">Stage Classification Accuracy</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Published Studies</div>
+                        </div>
                     </div>
-
-                    <div class="perks">
-                        <h3>Perks:</h3>
-                        <ul>
-                            <li>10K free API calls / month</li>
-                            <li>Fine-tune on your own data</li>
-                            <li>Private Slack group and 1-on-1 office hours</li>
-                        </ul>
+                    
+                    <div class="hero-actions">
+                        <a href="pages/resources.html#whitepaper" class="btn-primary">Read Technical Whitepaper</a>
+                        <a href="#demo" class="btn-secondary">Interactive Demo</a>
                     </div>
                 </div>
-
-                <div class="signup-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name & Institution</label>
-                            <input type="text" id="name" name="name" required>
+                
+                <div class="hero-visual">
+                    <div class="sleep-wave-visualization">
+                        <!-- Dynamic sleep wave animation -->
+                        <canvas id="sleepWaveCanvas"></canvas>
+                        <div class="wave-labels">
+                            <span class="label-rem">REM</span>
+                            <span class="label-deep">Deep Sleep</span>
+                            <span class="label-light">Light Sleep</span>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="building">What are you building?</label>
-                            <textarea id="building" name="building" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Join Alpha Program</button>
-                    </form>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Impact Section -->
+    <section class="research-impact">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Advancing Sleep Science Through AI</h2>
+                <p class="section-lead">
+                    Our vertical LLM approach delivers domain-specific accuracy that general models can't match
+                </p>
+            </div>
+            
+            <div class="impact-grid">
+                <article class="impact-card">
+                    <div class="impact-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7V12C2 16.5 4.23 20.68 8 22.28C8.5 21.67 9.07 21.13 9.7 20.67C8.72 19.62 8 18.26 8 16.75C8 13.64 10.69 11.12 14 11.12C17.31 11.12 20 13.64 20 16.75C20 18.26 19.28 19.62 18.3 20.67C18.93 21.13 19.5 21.67 20 22.28C23.77 20.68 26 16.5 26 12V7L12 2Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Clinical-Grade Accuracy</h3>
+                    <p>98.1% agreement with board-certified sleep specialists in diagnostic assessments</p>
+                    <a href="pages/research.html#validation" class="link-arrow">View clinical validation →</a>
+                </article>
+                
+                <article class="impact-card">
+                    <div class="impact-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 3H5C3.89 3 3 3.89 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.89 20.1 3 19 3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H15V17Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Multimodal Analysis</h3>
+                    <p>Processes PSG, wearable data, sleep diaries, and environmental factors simultaneously</p>
+                    <a href="pages/platform.html#architecture" class="link-arrow">Explore architecture →</a>
+                </article>
+                
+                <article class="impact-card">
+                    <div class="impact-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Real-Time Processing</h3>
+                    <p>12ms inference latency enables live sleep tracking and intervention applications</p>
+                    <a href="pages/platform.html#performance" class="link-arrow">See benchmarks →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Research -->
+    <section class="featured-research">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Research & Publications</h2>
+                <a href="pages/research.html" class="view-all">View all publications →</a>
+            </div>
+            
+            <div class="research-grid">
+                <article class="research-paper featured">
+                    <div class="paper-badge">Featured</div>
+                    <h3>Sleep LLM: A Domain-Specific Language Model for Sleep Science</h3>
+                    <p class="authors">Chen, J., Martinez, S., Patel, R., Thompson, K., & Lee, M.</p>
+                    <p class="journal">Nature Digital Medicine, 2024</p>
+                    <p class="abstract">
+                        We present Sleep LLM, the first large language model specifically trained for sleep science applications. 
+                        Through fine-tuning on 120M+ nights of multimodal sleep data, our model achieves state-of-the-art 
+                        performance across multiple sleep analysis tasks...
+                    </p>
+                    <div class="paper-actions">
+                        <a href="#" class="btn-outline">Read Paper</a>
+                        <a href="#" class="btn-text">View Dataset</a>
+                        <a href="#" class="btn-text">Code</a>
+                    </div>
+                </article>
+                
+                <article class="research-paper">
+                    <h3>Benchmarking Sleep Stage Classification: Sleep LLM vs Traditional Methods</h3>
+                    <p class="authors">Thompson, K., Chen, J., et al.</p>
+                    <p class="journal">Sleep Medicine Reviews, 2024</p>
+                    <div class="paper-actions">
+                        <a href="#" class="btn-outline-small">Read</a>
+                    </div>
+                </article>
+                
+                <article class="research-paper">
+                    <h3>Privacy-Preserving Sleep Analytics with Federated Learning</h3>
+                    <p class="authors">Patel, R., Martinez, S., et al.</p>
+                    <p class="journal">JMIR Medical Informatics, 2024</p>
+                    <div class="paper-actions">
+                        <a href="#" class="btn-outline-small">Read</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section id="demo" class="interactive-demo">
+        <div class="container">
+            <h2>Experience Sleep LLM in Action</h2>
+            <p class="section-lead">Try our model with sample sleep data or upload your own (anonymized)</p>
+            
+            <div class="demo-container">
+                <div class="demo-tabs">
+                    <button class="tab active" data-tab="staging">Sleep Staging</button>
+                    <button class="tab" data-tab="apnea">Apnea Detection</button>
+                    <button class="tab" data-tab="insights">Personalized Insights</button>
+                </div>
+                
+                <div class="demo-content">
+                    <div class="tab-pane active" id="staging">
+                        <div class="demo-interface">
+                            <div class="data-input">
+                                <h4>Input: 8-hour PSG Recording</h4>
+                                <div class="waveform-preview">
+                                    <!-- Simulated waveform visualization -->
+                                </div>
+                            </div>
+                            <div class="model-output">
+                                <h4>Sleep LLM Analysis</h4>
+                                <div class="sleep-hypnogram">
+                                    <!-- Hypnogram visualization -->
+                                </div>
+                                <div class="stage-summary">
+                                    <div class="stage-stat">
+                                        <span class="stage-name">REM Sleep</span>
+                                        <span class="stage-value">22.3%</span>
+                                    </div>
+                                    <div class="stage-stat">
+                                        <span class="stage-name">Deep Sleep</span>
+                                        <span class="stage-value">18.7%</span>
+                                    </div>
+                                    <div class="stage-stat">
+                                        <span class="stage-name">Light Sleep</span>
+                                        <span class="stage-value">54.2%</span>
+                                    </div>
+                                    <div class="stage-stat">
+                                        <span class="stage-name">Wake</span>
+                                        <span class="stage-value">4.8%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-cta">
+                    <p>Want to try with your own data?</p>
+                    <a href="#alpha-access" class="btn-primary">Request Research Access</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Grid -->
+    <section class="use-cases-preview">
+        <div class="container">
+            <h2>Transforming Sleep Health Across Industries</h2>
+            
+            <div class="use-case-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">🏥</div>
+                    <h3>Clinical Research</h3>
+                    <p>Accelerate sleep studies with automated analysis and pattern discovery</p>
+                    <ul>
+                        <li>Automated PSG scoring</li>
+                        <li>Cohort analysis tools</li>
+                        <li>Biomarker discovery</li>
+                    </ul>
+                    <a href="pages/use-cases.html#clinical" class="link-arrow">Learn more →</a>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="use-case-icon">📱</div>
+                    <h3>Wellness Apps</h3>
+                    <p>Integrate advanced sleep AI into consumer health applications</p>
+                    <ul>
+                        <li>Real-time sleep tracking</li>
+                        <li>Personalized recommendations</li>
+                        <li>Coaching insights</li>
+                    </ul>
+                    <a href="pages/use-cases.html#wellness" class="link-arrow">Learn more →</a>
+                </div>
+                
+                <div class="use-case-card">
+                    <div class="use-case-icon">🔬</div>
+                    <h3>Academic Research</h3>
+                    <p>Advance sleep science with powerful AI-driven analysis tools</p>
+                    <ul>
+                        <li>Literature synthesis</li>
+                        <li>Hypothesis generation</li>
+                        <li>Data visualization</li>
+                    </ul>
+                    <a href="pages/use-cases.html#academic" class="link-arrow">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-preview">
+        <div class="container">
+            <div class="tech-content">
+                <div class="tech-description">
+                    <h2>Built on Cutting-Edge Technology</h2>
+                    <p class="lead">
+                        Our platform combines state-of-the-art machine learning with robust, 
+                        enterprise-grade infrastructure
+                    </p>
+                    
+                    <div class="tech-features">
+                        <div class="tech-feature">
+                            <h4>🧠 Custom Transformer Architecture</h4>
+                            <p>Optimized for temporal sleep data with attention mechanisms designed for biosignals</p>
+                        </div>
+                        <div class="tech-feature">
+                            <h4>🔒 Enterprise Security</h4>
+                            <p>HIPAA-compliant, SOC 2 ready, with end-to-end encryption and Sigstore verification</p>
+                        </div>
+                        <div class="tech-feature">
+                            <h4>⚡ Scalable Infrastructure</h4>
+                            <p>Cloud-native architecture supporting millions of concurrent analyses</p>
+                        </div>
+                    </div>
+                    
+                    <a href="pages/platform.html" class="btn-secondary">Explore Full Platform →</a>
+                </div>
+                
+                <div class="tech-visual">
+                    <div class="architecture-diagram">
+                        <!-- Simplified architecture visualization -->
+                        <div class="arch-layer">
+                            <span class="layer-label">API Layer</span>
+                            <div class="layer-components">REST • GraphQL • WebSocket</div>
+                        </div>
+                        <div class="arch-layer">
+                            <span class="layer-label">Model Layer</span>
+                            <div class="layer-components">Sleep LLM • Fine-tuning • Inference</div>
+                        </div>
+                        <div class="arch-layer">
+                            <span class="layer-label">Data Layer</span>
+                            <div class="layer-components">Time-series DB • Vector Store • Cache</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Preview -->
+    <section class="team-preview">
+        <div class="container">
+            <h2>Led by Sleep Science and AI Experts</h2>
+            <p class="section-lead">
+                Our team combines decades of experience in sleep medicine, machine learning, and healthcare innovation
+            </p>
+            
+            <div class="team-highlights">
+                <div class="team-stat">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-content">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Stanford/MIT Alumni</div>
+                    </div>
+                </div>
+                <div class="team-stat">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-content">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Published Papers</div>
+                    </div>
+                </div>
+                <div class="team-stat">
+                    <div class="stat-icon">🏢</div>
+                    <div class="stat-content">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Successful Exits</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="advisor-logos">
+                <p class="logos-label">Advised by leaders from:</p>
+                <div class="logo-grid">
+                    <span class="institution">Stanford Sleep Medicine</span>
+                    <span class="institution">MIT Media Lab</span>
+                    <span class="institution">UCSF</span>
+                    <span class="institution">Johns Hopkins</span>
+                </div>
+            </div>
+            
+            <a href="pages/about.html" class="btn-secondary">Meet the Full Team →</a>
+        </div>
+    </section>
+
+    <!-- Alpha Access CTA -->
+    <section id="alpha-access" class="alpha-access">
+        <div class="container">
+            <div class="alpha-card">
+                <div class="alpha-content">
+                    <h2>Join the Alpha Program</h2>
+                    <p class="alpha-lead">
+                        Be among the first 25 organizations to access Sleep LLM and shape the future of sleep AI
+                    </p>
+                    
+                    <div class="alpha-benefits">
+                        <div class="benefit">
+                            <div class="benefit-icon">🔬</div>
+                            <div class="benefit-text">
+                                <h4>Research Sandbox</h4>
+                                <p>Jupyter-like environment with full API access</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-icon">🎯</div>
+                            <div class="benefit-text">
+                                <h4>Custom Fine-tuning</h4>
+                                <p>Train on your proprietary sleep datasets</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-icon">💬</div>
+                            <div class="benefit-text">
+                                <h4>Direct Support</h4>
+                                <p>Private Slack channel & weekly office hours</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-icon">🎁</div>
+                            <div class="benefit-text">
+                                <h4>10K Free API Calls</h4>
+                                <p>Monthly credits for development & testing</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alpha-form">
+                        <form id="alphaSignup">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="institution">Institution/Company</label>
+                                    <input type="text" id="institution" name="institution" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="role">Your Role</label>
+                                    <select id="role" name="role" required>
+                                        <option value="">Select your role</option>
+                                        <option value="researcher">Researcher/Scientist</option>
+                                        <option value="clinician">Clinician</option>
+                                        <option value="developer">Developer/Engineer</option>
+                                        <option value="product">Product Manager</option>
+                                        <option value="executive">Executive/Founder</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="useCase">How will you use Sleep LLM? (2-3 sentences)</label>
+                                <textarea id="useCase" name="useCase" rows="3" required></textarea>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary">Request Alpha Access</button>
+                                <p class="form-note">Limited to 25 participants. Applications reviewed weekly.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Updates -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News & Updates</h2>
+                <a href="pages/blog.html" class="view-all">View all posts →</a>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">Dec 15, 2024</div>
+                    <h3>Sleep LLM Achieves Breakthrough in REM Detection</h3>
+                    <p>Our latest model update shows 96.8% accuracy in detecting REM sleep abnormalities...</p>
+                    <a href="#" class="link-arrow">Read more →</a>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-date">Dec 8, 2024</div>
+                    <h3>Partnership with Stanford Sleep Medicine Center</h3>
+                    <p>Excited to announce our collaboration with Stanford for clinical validation studies...</p>
+                    <a href="#" class="link-arrow">Read more →</a>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-date">Nov 28, 2024</div>
+                    <h3>Series A Funding Round Closed</h3>
+                    <p>We've raised $25M to accelerate Sleep LLM development and expand our research team...</p>
+                    <a href="#" class="link-arrow">Read more →</a>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Naptick</h3>
-                    <p>Contact us: <a href="mailto:partnerships@naptick.ai">partnerships@naptick.ai</a></p>
-                </div>
-                <div class="footer-section">
-                    <h4>Social</h4>
-                    <div class="social-links">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">GitHub</a>
+                    <div class="footer-brand">
+                        <h3>Naptick Sleep LLM</h3>
+                        <p>Transforming sleep science through domain-specific AI</p>
+                    </div>
+                    <div class="footer-contact">
+                        <p><strong>Contact:</strong> <a href="mailto:partnerships@naptick.ai">partnerships@naptick.ai</a></p>
+                        <p><strong>Press:</strong> <a href="mailto:press@naptick.ai">press@naptick.ai</a></p>
                     </div>
                 </div>
+                
                 <div class="footer-section">
-                    <h4>Legal</h4>
-                    <div class="legal-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Use</a>
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="pages/platform.html">Technology</a></li>
+                        <li><a href="pages/platform.html#api">API Documentation</a></li>
+                        <li><a href="pages/platform.html#security">Security</a></li>
+                        <li><a href="pages/resources.html#sandbox">Research Sandbox</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="pages/research.html">Publications</a></li>
+                        <li><a href="pages/research.html#datasets">Datasets</a></li>
+                        <li><a href="pages/research.html#benchmarks">Benchmarks</a></li>
+                        <li><a href="pages/resources.html#whitepaper">Whitepaper</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/about.html#team">Team</a></li>
+                        <li><a href="pages/about.html#advisors">Advisors</a></li>
+                        <li><a href="pages/about.html#careers">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="newsletter-signup">
+                        <h5>Subscribe to Updates</h5>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="your@email.com" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2025 Naptick AI. All rights reserved.</p>
+                <div class="footer-legal">
+                    <p>&copy; 2025 Naptick AI, Inc. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="pages/privacy.html">Privacy Policy</a>
+                        <a href="pages/terms.html">Terms of Service</a>
+                        <a href="pages/security.html">Security</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="js/research-base.js"></script>
+    <script src="js/homepage.js"></script>
 </body>
 </html>

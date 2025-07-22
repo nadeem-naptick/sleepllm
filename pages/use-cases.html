@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sleep LLM Use Cases - Clinical Research, Wellness Apps, Academic Studies, and Enterprise Applications">
+    <title>Use Cases - Naptick Sleep LLM</title>
+    
+    <!-- Academic Font Stack -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/research-base.css">
+    <link rel="stylesheet" href="../css/use-cases-page.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html" class="logo">
+                    <span class="logo-text">Naptick</span>
+                    <span class="logo-tagline">Sleep LLM</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="research.html" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="platform.html" class="nav-link">Platform</a>
+                </li>
+                <li class="nav-item">
+                    <a href="use-cases.html" class="nav-link active">Use Cases</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item nav-cta">
+                    <a href="../index.html#alpha-access" class="btn-primary-nav">Get Access</a>
+                </li>
+            </ul>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Sleep LLM Use Cases</h1>
+            <p class="hero-lead">
+                Transforming sleep health across clinical research, wellness technology, 
+                and academic institutions with domain-specific AI
+            </p>
+        </div>
+    </section>
+
+    <!-- Use Cases Overview -->
+    <section class="use-cases-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="use-case-card featured" id="clinical">
+                    <div class="use-case-icon">🏥</div>
+                    <h2>Clinical Research & Sleep Labs</h2>
+                    <p class="use-case-description">
+                        Accelerate sleep studies, improve diagnostic accuracy, and discover new biomarkers 
+                        with AI-powered analysis of polysomnography and clinical data.
+                    </p>
+                    
+                    <div class="capabilities">
+                        <h3>Key Capabilities</h3>
+                        <ul>
+                            <li><strong>Automated PSG Scoring:</strong> 94.2% accuracy in sleep stage classification</li>
+                            <li><strong>Disorder Detection:</strong> Advanced algorithms for apnea, RBD, and other conditions</li>
+                            <li><strong>Cohort Analysis:</strong> Pattern discovery across large patient populations</li>
+                            <li><strong>Biomarker Discovery:</strong> Identify novel sleep health indicators</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="use-case-example">
+                        <h3>Real-World Application</h3>
+                        <div class="example-card">
+                            <h4>Stanford Sleep Medicine Center</h4>
+                            <p>
+                                "Sleep LLM reduced our PSG analysis time from 2 hours to 15 minutes per study, 
+                                while maintaining clinical-grade accuracy. This allows our technicians to focus 
+                                on complex cases and patient care."
+                            </p>
+                            <span class="example-source">— Dr. Sarah Martinez, Sleep Medicine</span>
+                        </div>
+                    </div>
+                    
+                    <a href="../index.html#alpha-access" class="btn-primary">Start Clinical Trial</a>
+                </div>
+
+                <div class="use-case-card featured" id="wellness">
+                    <div class="use-case-icon">📱</div>
+                    <h2>Wellness Apps & Consumer Health</h2>
+                    <p class="use-case-description">
+                        Integrate advanced sleep AI into consumer applications for personalized insights, 
+                        coaching, and health recommendations based on wearable data.
+                    </p>
+                    
+                    <div class="capabilities">
+                        <h3>Integration Features</h3>
+                        <ul>
+                            <li><strong>Wearable Data Processing:</strong> Apple Watch, Fitbit, Oura Ring compatibility</li>
+                            <li><strong>Personalized Coaching:</strong> Evidence-based sleep improvement recommendations</li>
+                            <li><strong>Real-time Analysis:</strong> 12ms inference for live sleep tracking</li>
+                            <li><strong>Privacy-First:</strong> On-device processing options available</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="api-example">
+                        <h3>Simple Integration</h3>
+                        <div class="code-block">
+                            <pre><code>// Analyze user's sleep data
+const analysis = await sleepLLM.analyze({
+  wearableData: user.lastNightData,
+  userProfile: { age: 32, lifestyle: 'active' }
+});
+
+// Get personalized recommendations  
+const insights = analysis.getRecommendations();
+console.log(insights.sleepQuality); // 78/100</code></pre>
+                        </div>
+                    </div>
+                    
+                    <a href="../pages/platform.html#api" class="btn-primary">View API Docs</a>
+                </div>
+
+                <div class="use-case-card featured" id="academic">
+                    <div class="use-case-icon">🔬</div>
+                    <h2>Academic Research</h2>
+                    <p class="use-case-description">
+                        Advance sleep science with powerful AI tools for literature analysis, 
+                        hypothesis generation, and large-scale data processing.
+                    </p>
+                    
+                    <div class="capabilities">
+                        <h3>Research Tools</h3>
+                        <ul>
+                            <li><strong>Literature Synthesis:</strong> AI-powered analysis of sleep research papers</li>
+                            <li><strong>Hypothesis Generation:</strong> Identify novel research directions</li>
+                            <li><strong>Data Visualization:</strong> Advanced plotting and statistical analysis</li>
+                            <li><strong>Reproducible Research:</strong> Docker containers and code repositories</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="research-example">
+                        <h3>Recent Publication</h3>
+                        <div class="paper-preview">
+                            <h4>"Novel Sleep Biomarkers Discovered Through Large-Scale AI Analysis"</h4>
+                            <p class="authors">Thompson, K., et al. (2024)</p>
+                            <p>
+                                Using Sleep LLM on 50,000+ sleep studies, researchers identified three new 
+                                biomarkers predictive of cognitive decline, leading to earlier intervention strategies.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <a href="../pages/research.html#datasets" class="btn-primary">Access Datasets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Applications -->
+    <section class="industry-applications">
+        <div class="container">
+            <h2>Industry Applications</h2>
+            
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <h3>🏢 Healthcare Systems</h3>
+                    <ul>
+                        <li>EMR integration for sleep disorder screening</li>
+                        <li>Population health analytics</li>
+                        <li>Clinical decision support systems</li>
+                        <li>Quality improvement initiatives</li>
+                    </ul>
+                </div>
+                
+                <div class="industry-card">
+                    <h3>🏭 Pharmaceutical</h3>
+                    <ul>
+                        <li>Drug efficacy studies for sleep medications</li>
+                        <li>Clinical trial endpoint analysis</li>
+                        <li>Adverse event detection in sleep studies</li>
+                        <li>Regulatory submission support</li>
+                    </ul>
+                </div>
+                
+                <div class="industry-card">
+                    <h3>🚛 Transportation</h3>
+                    <ul>
+                        <li>Driver fatigue monitoring systems</li>
+                        <li>Fleet safety optimization</li>
+                        <li>Compliance with DOT sleep regulations</li>
+                        <li>Predictive maintenance scheduling</li>
+                    </ul>
+                </div>
+                
+                <div class="industry-card">
+                    <h3>🏋️ Sports & Performance</h3>
+                    <ul>
+                        <li>Athletic performance optimization</li>
+                        <li>Recovery monitoring for professional teams</li>
+                        <li>Training load adjustment based on sleep quality</li>
+                        <li>Injury prevention through sleep analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <h2>Customer Success Stories</h2>
+            
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-header">
+                        <img src="#" alt="Hospital Logo" class="story-logo">
+                        <div class="story-info">
+                            <h3>Major Academic Medical Center</h3>
+                            <p class="story-type">Sleep Medicine Department</p>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "Sleep LLM has revolutionized our sleep lab operations. We've increased our study throughput by 300% while maintaining the highest quality standards. The AI catches subtle patterns that even experienced technologists might miss."
+                    </blockquote>
+                    <div class="story-metrics">
+                        <div class="metric">
+                            <span class="number">300%</span>
+                            <span class="label">Throughput Increase</span>
+                        </div>
+                        <div class="metric">
+                            <span class="number">15min</span>
+                            <span class="label">Analysis Time</span>
+                        </div>
+                        <div class="metric">
+                            <span class="number">99.2%</span>
+                            <span class="label">Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-header">
+                        <img src="#" alt="Startup Logo" class="story-logo">
+                        <div class="story-info">
+                            <h3>Leading Wellness App</h3>
+                            <p class="story-type">Digital Health Startup</p>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "Integrating Sleep LLM gave us enterprise-level AI capabilities without the need to build our own models. Our users now get insights comparable to clinical sleep studies right from their wearable data."
+                    </blockquote>
+                    <div class="story-metrics">
+                        <div class="metric">
+                            <span class="number">2M+</span>
+                            <span class="label">Active Users</span>
+                        </div>
+                        <div class="metric">
+                            <span class="number">4.8★</span>
+                            <span class="label">App Store Rating</span>
+                        </div>
+                        <div class="metric">
+                            <span class="number">40%</span>
+                            <span class="label">Engagement Boost</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Guide -->
+    <section class="implementation-guide">
+        <div class="container">
+            <h2>Getting Started</h2>
+            
+            <div class="implementation-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Consultation</h3>
+                        <p>Schedule a technical consultation to discuss your specific use case and requirements.</p>
+                        <a href="#" class="step-link">Book Consultation →</a>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Pilot Program</h3>
+                        <p>Start with a limited pilot to validate Sleep LLM's performance on your data and workflows.</p>
+                        <a href="#" class="step-link">Join Alpha Program →</a>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Integration</h3>
+                        <p>Full API integration with dedicated support, training, and ongoing optimization.</p>
+                        <a href="../pages/platform.html" class="step-link">View Platform →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="use-cases-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Sleep Applications?</h2>
+                <p>Join the organizations already using Sleep LLM to advance sleep science and health.</p>
+                <div class="cta-actions">
+                    <a href="../index.html#alpha-access" class="btn-primary">Get Started</a>
+                    <a href="#" class="btn-secondary">Schedule Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3>Naptick Sleep LLM</h3>
+                        <p>Transforming sleep health across industries</p>
+                    </div>
+                    <div class="footer-contact">
+                        <p><strong>Business:</strong> <a href="mailto:business@naptick.ai">business@naptick.ai</a></p>
+                        <p><strong>Support:</strong> <a href="mailto:support@naptick.ai">support@naptick.ai</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Use Cases</h4>
+                    <ul>
+                        <li><a href="#clinical">Clinical Research</a></li>
+                        <li><a href="#wellness">Wellness Apps</a></li>
+                        <li><a href="#academic">Academic Research</a></li>
+                        <li><a href="../pages/platform.html">Platform</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../pages/resources.html">Documentation</a></li>
+                        <li><a href="../pages/platform.html#api">API Reference</a></li>
+                        <li><a href="../pages/research.html">Research</a></li>
+                        <li><a href="../pages/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../pages/about.html">About Us</a></li>
+                        <li><a href="../pages/about.html#team">Team</a></li>
+                        <li><a href="../pages/about.html#careers">Careers</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Naptick AI, Inc. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="../pages/privacy.html">Privacy</a>
+                        <a href="../pages/terms.html">Terms</a>
+                        <a href="../pages/security.html">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/research-base.js"></script>
+</body>
+</html>

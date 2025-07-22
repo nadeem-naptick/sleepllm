@@ -1,0 +1,500 @@
+/* Research Page Specific Styles */
+
+/* ====== Page Hero ====== */
+.page-hero {
+    padding: calc(100px + var(--space-4xl)) 0 var(--space-4xl);
+    background: var(--gradient-subtle);
+    text-align: center;
+}
+
+.page-hero h1 {
+    margin-bottom: var(--space-lg);
+}
+
+.hero-lead {
+    font-size: var(--text-xl);
+    color: var(--color-text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ====== Research Stats ====== */
+.research-stats {
+    background: var(--color-surface);
+    padding: var(--space-3xl) 0;
+    margin-top: calc(-1 * var(--space-2xl));
+    position: relative;
+    z-index: 10;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+}
+
+.stat-card {
+    text-align: center;
+    padding: var(--space-xl);
+}
+
+.stat-value {
+    font-size: var(--text-4xl);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.stat-label {
+    font-size: var(--text-sm);
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ====== Publications ====== */
+.latest-research {
+    padding: var(--space-4xl) 0;
+}
+
+.publication-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.publication {
+    background: var(--color-surface);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
+    transition: all var(--transition-base);
+}
+
+.publication:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.publication.featured {
+    border: 2px solid var(--color-secondary);
+}
+
+.pub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
+.pub-type {
+    font-size: var(--text-sm);
+    color: var(--color-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pub-date {
+    font-size: var(--text-sm);
+    color: var(--color-text-light);
+}
+
+.publication h3 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-md);
+    color: var(--color-primary);
+}
+
+.authors {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-xs);
+}
+
+.affiliations {
+    font-size: var(--text-sm);
+    color: var(--color-text-light);
+    margin-bottom: var(--space-sm);
+}
+
+.journal {
+    font-size: var(--text-sm);
+    color: var(--color-accent);
+    font-style: italic;
+    margin-bottom: var(--space-lg);
+}
+
+.abstract {
+    background: var(--color-background);
+    padding: var(--space-xl);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-lg);
+}
+
+.abstract h4 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-md);
+    color: var(--color-primary);
+}
+
+.abstract p {
+    margin-bottom: var(--space-md);
+    line-height: 1.7;
+}
+
+.abstract p:last-child {
+    margin-bottom: 0;
+}
+
+.pub-actions {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.citation-box {
+    margin-top: var(--space-lg);
+    padding: var(--space-lg);
+    background: var(--color-background);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+}
+
+.citation-box h5 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-sm);
+}
+
+.citation-box pre {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    white-space: pre-wrap;
+    margin-bottom: var(--space-md);
+}
+
+.copy-citation {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.copy-citation:hover {
+    background: var(--color-accent);
+}
+
+.view-more {
+    text-align: center;
+    margin-top: var(--space-3xl);
+}
+
+/* ====== Datasets Section ====== */
+.datasets-section {
+    background: var(--color-background);
+    padding: var(--space-4xl) 0;
+}
+
+.dataset-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+    margin-top: var(--space-3xl);
+}
+
+.dataset-card {
+    background: var(--color-surface);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
+    transition: all var(--transition-base);
+}
+
+.dataset-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.dataset-icon {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-lg);
+}
+
+.dataset-card h3 {
+    margin-bottom: var(--space-sm);
+}
+
+.dataset-size {
+    font-size: var(--text-sm);
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+}
+
+.dataset-features {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    margin: var(--space-lg) 0;
+}
+
+.feature-tag {
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-xs);
+    color: var(--color-text-secondary);
+}
+
+.dataset-actions {
+    display: flex;
+    gap: var(--space-md);
+}
+
+/* ====== Benchmarks Section ====== */
+.benchmarks-section {
+    padding: var(--space-4xl) 0;
+}
+
+.benchmark-table {
+    overflow-x: auto;
+    margin: var(--space-2xl) 0;
+}
+
+.benchmark-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.benchmark-table th {
+    background: var(--color-primary);
+    color: white;
+    padding: var(--space-md) var(--space-lg);
+    text-align: left;
+    font-weight: 600;
+}
+
+.benchmark-table td {
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.benchmark-table tbody tr:hover {
+    background: var(--color-background);
+}
+
+.highlight-cell {
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.benchmark-notes {
+    background: var(--color-surface);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-2xl);
+}
+
+.benchmark-notes h3 {
+    margin-bottom: var(--space-md);
+}
+
+.benchmark-notes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benchmark-notes li {
+    padding: var(--space-sm) 0;
+    padding-left: var(--space-xl);
+    position: relative;
+}
+
+.benchmark-notes li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+/* ====== Methods Section ====== */
+.methods-section {
+    background: var(--color-background);
+    padding: var(--space-4xl) 0;
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.method-card {
+    background: var(--color-surface);
+    padding: var(--space-2xl);
+    border-radius: var(--radius-lg);
+}
+
+.method-card h3 {
+    margin-bottom: var(--space-lg);
+}
+
+.method-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-md);
+}
+
+.method-card li {
+    padding: var(--space-sm) 0;
+    padding-left: var(--space-lg);
+    position: relative;
+    color: var(--color-text-secondary);
+}
+
+.method-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+}
+
+/* ====== Collaborations Section ====== */
+.collaborations-section {
+    padding: var(--space-4xl) 0;
+}
+
+.collab-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    margin: var(--space-2xl) 0;
+}
+
+.collab-card {
+    background: var(--color-surface);
+    padding: var(--space-xl);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border-light);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.collab-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.collab-card h4 {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-sm);
+}
+
+.collab-card p {
+    font-size: var(--text-sm);
+    margin: 0;
+}
+
+.collab-cta {
+    text-align: center;
+    margin-top: var(--space-3xl);
+    padding: var(--space-2xl);
+    background: var(--color-background);
+    border-radius: var(--radius-lg);
+}
+
+.collab-cta p {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-lg);
+}
+
+/* ====== Research CTA ====== */
+.research-cta {
+    background: var(--gradient-primary);
+    color: white;
+    padding: var(--space-4xl) 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    color: white;
+    margin-bottom: var(--space-md);
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-2xl);
+}
+
+.cta-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .dataset-grid,
+    .methods-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benchmark-table {
+        font-size: var(--text-sm);
+    }
+    
+    .benchmark-table th,
+    .benchmark-table td {
+        padding: var(--space-sm);
+    }
+    
+    .collab-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pub-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xs);
+    }
+    
+    .pub-actions {
+        flex-direction: column;
+    }
+    
+    .pub-actions > * {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ====== Active Navigation ====== */
+.nav-link.active {
+    color: var(--color-primary);
+}
+
+.nav-link.active::after {
+    width: 100%;
+    background: var(--gradient-primary);
+}

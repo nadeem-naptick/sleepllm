@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naptick Sleep LLM Research - Explore our publications, datasets, benchmarks, and scientific foundation in sleep AI">
+    <title>Research - Naptick Sleep LLM</title>
+    
+    <!-- Academic Font Stack -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/research-base.css">
+    <link rel="stylesheet" href="../css/research-page.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html" class="logo">
+                    <span class="logo-text">Naptick</span>
+                    <span class="logo-tagline">Sleep LLM</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="research.html" class="nav-link active">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="platform.html" class="nav-link">Platform</a>
+                </li>
+                <li class="nav-item">
+                    <a href="use-cases.html" class="nav-link">Use Cases</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item nav-cta">
+                    <a href="../index.html#alpha-access" class="btn-primary-nav">Get Access</a>
+                </li>
+            </ul>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Research & Scientific Foundation</h1>
+            <p class="hero-lead">
+                Advancing sleep science through rigorous research, open datasets, and 
+                collaborative innovation in domain-specific AI
+            </p>
+        </div>
+    </section>
+
+    <!-- Research Stats -->
+    <section class="research-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">120M+</div>
+                    <div class="stat-label">Sleep Episodes in Training Data</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">15</div>
+                    <div class="stat-label">Peer-Reviewed Publications</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">50+</div>
+                    <div class="stat-label">Research Collaborators</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">98.1%</div>
+                    <div class="stat-label">Clinical Validation Accuracy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Research -->
+    <section id="latest" class="latest-research">
+        <div class="container">
+            <h2>Latest Publications</h2>
+            
+            <div class="publication-list">
+                <article class="publication featured">
+                    <div class="pub-header">
+                        <span class="pub-type">Original Research</span>
+                        <span class="pub-date">December 2024</span>
+                    </div>
+                    <h3>Sleep LLM: A Domain-Specific Language Model for Sleep Science Applications</h3>
+                    <p class="authors">
+                        Chen, J.<sup>1</sup>, Martinez, S.<sup>2</sup>, Patel, R.<sup>1</sup>, 
+                        Thompson, K.<sup>3</sup>, Lee, M.<sup>1</sup>
+                    </p>
+                    <p class="affiliations">
+                        <sup>1</sup>Naptick AI, <sup>2</sup>Stanford Sleep Medicine, 
+                        <sup>3</sup>MIT Media Lab
+                    </p>
+                    <p class="journal">Nature Digital Medicine, 2024; 7:425</p>
+                    
+                    <div class="abstract">
+                        <h4>Abstract</h4>
+                        <p>
+                            <strong>Background:</strong> Current approaches to automated sleep analysis rely on 
+                            general-purpose machine learning models that lack domain-specific knowledge. We present 
+                            Sleep LLM, the first large language model specifically trained for sleep science applications.
+                        </p>
+                        <p>
+                            <strong>Methods:</strong> We fine-tuned a transformer-based architecture on a curated 
+                            dataset of 120+ million nights of multimodal sleep data, including polysomnography, 
+                            wearable sensors, sleep diaries, and clinical notes. The model was trained using a 
+                            novel temporal attention mechanism optimized for biosignal processing.
+                        </p>
+                        <p>
+                            <strong>Results:</strong> Sleep LLM achieved 94.2% accuracy in sleep stage classification 
+                            (Cohen's κ = 0.91), 96.8% sensitivity in apnea detection, and 98.1% agreement with 
+                            board-certified sleep specialists in diagnostic assessments. The model demonstrated 
+                            superior performance across all metrics compared to existing approaches.
+                        </p>
+                        <p>
+                            <strong>Conclusions:</strong> Domain-specific language models represent a significant 
+                            advancement in automated sleep analysis, offering accuracy comparable to human experts 
+                            while enabling new applications in personalized sleep health.
+                        </p>
+                    </div>
+                    
+                    <div class="pub-actions">
+                        <a href="#" class="btn-primary">Full Text (PDF)</a>
+                        <a href="#" class="btn-outline">Supplementary Data</a>
+                        <a href="#" class="btn-outline">Code Repository</a>
+                        <button class="btn-text">Cite This Paper</button>
+                    </div>
+                    
+                    <div class="citation-box" style="display: none;">
+                        <h5>Citation</h5>
+                        <pre>Chen J, Martinez S, Patel R, Thompson K, Lee M. Sleep LLM: A Domain-Specific 
+Language Model for Sleep Science Applications. Nat Digit Med. 2024;7:425.</pre>
+                        <button class="copy-citation">Copy to Clipboard</button>
+                    </div>
+                </article>
+
+                <article class="publication">
+                    <div class="pub-header">
+                        <span class="pub-type">Validation Study</span>
+                        <span class="pub-date">November 2024</span>
+                    </div>
+                    <h3>Clinical Validation of Sleep LLM Against Gold Standard Polysomnography</h3>
+                    <p class="authors">Martinez, S., et al.</p>
+                    <p class="journal">Sleep Medicine Reviews, 2024; 68:101892</p>
+                    <div class="pub-actions">
+                        <a href="#" class="btn-outline-small">Read Paper</a>
+                    </div>
+                </article>
+
+                <article class="publication">
+                    <div class="pub-header">
+                        <span class="pub-type">Technical Report</span>
+                        <span class="pub-date">October 2024</span>
+                    </div>
+                    <h3>Privacy-Preserving Sleep Analytics: A Federated Learning Approach</h3>
+                    <p class="authors">Patel, R., Chen, J., et al.</p>
+                    <p class="journal">JMIR Medical Informatics, 2024; 12(10):e52341</p>
+                    <div class="pub-actions">
+                        <a href="#" class="btn-outline-small">Read Paper</a>
+                    </div>
+                </article>
+
+                <article class="publication">
+                    <div class="pub-header">
+                        <span class="pub-type">Review</span>
+                        <span class="pub-date">September 2024</span>
+                    </div>
+                    <h3>The Evolution of AI in Sleep Medicine: From Signal Processing to Language Models</h3>
+                    <p class="authors">Thompson, K., Lee, M.</p>
+                    <p class="journal">Annual Review of Biomedical Engineering, 2024; 26:315-342</p>
+                    <div class="pub-actions">
+                        <a href="#" class="btn-outline-small">Read Paper</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="view-more">
+                <a href="#" class="btn-secondary">View All Publications →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Datasets Section -->
+    <section id="datasets" class="datasets-section">
+        <div class="container">
+            <h2>Open Datasets</h2>
+            <p class="section-lead">
+                Contributing to open science with curated sleep datasets for research and development
+            </p>
+            
+            <div class="dataset-grid">
+                <div class="dataset-card">
+                    <div class="dataset-icon">📊</div>
+                    <h3>SLEEP-100K</h3>
+                    <p class="dataset-size">100,000 nights • 1.2TB</p>
+                    <p>
+                        Comprehensive polysomnography dataset with expert annotations for sleep staging, 
+                        arousals, and respiratory events. Includes demographic metadata and outcomes.
+                    </p>
+                    <div class="dataset-features">
+                        <span class="feature-tag">PSG</span>
+                        <span class="feature-tag">Annotations</span>
+                        <span class="feature-tag">Demographics</span>
+                    </div>
+                    <div class="dataset-actions">
+                        <a href="#" class="btn-outline">Download</a>
+                        <a href="#" class="btn-text">Documentation</a>
+                    </div>
+                </div>
+
+                <div class="dataset-card">
+                    <div class="dataset-icon">⌚</div>
+                    <h3>WearableSleep-50K</h3>
+                    <p class="dataset-size">50,000 users • 500GB</p>
+                    <p>
+                        Multi-device wearable sleep tracking data synchronized with ground truth from 
+                        sleep labs. Includes Apple Watch, Fitbit, and Oura Ring data.
+                    </p>
+                    <div class="dataset-features">
+                        <span class="feature-tag">Wearables</span>
+                        <span class="feature-tag">Multi-device</span>
+                        <span class="feature-tag">Ground Truth</span>
+                    </div>
+                    <div class="dataset-actions">
+                        <a href="#" class="btn-outline">Download</a>
+                        <a href="#" class="btn-text">Documentation</a>
+                    </div>
+                </div>
+
+                <div class="dataset-card">
+                    <div class="dataset-icon">📝</div>
+                    <h3>SleepText-20K</h3>
+                    <p class="dataset-size">20,000 reports • 50GB</p>
+                    <p>
+                        Anonymized clinical sleep study reports with corresponding PSG data. 
+                        Ideal for training multimodal models that combine signals and text.
+                    </p>
+                    <div class="dataset-features">
+                        <span class="feature-tag">Clinical Notes</span>
+                        <span class="feature-tag">PSG</span>
+                        <span class="feature-tag">Multimodal</span>
+                    </div>
+                    <div class="dataset-actions">
+                        <a href="#" class="btn-outline">Request Access</a>
+                        <a href="#" class="btn-text">Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benchmarks Section -->
+    <section id="benchmarks" class="benchmarks-section">
+        <div class="container">
+            <h2>Benchmarks & Evaluation</h2>
+            <p class="section-lead">
+                Standardized benchmarks for evaluating sleep AI models across multiple tasks
+            </p>
+            
+            <div class="benchmark-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Metric</th>
+                            <th>Sleep LLM</th>
+                            <th>Previous SOTA</th>
+                            <th>Human Expert</th>
+                            <th>Dataset</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sleep Stage Classification</td>
+                            <td>Accuracy / κ</td>
+                            <td class="highlight-cell">94.2% / 0.91</td>
+                            <td>87.3% / 0.83</td>
+                            <td>95.0% / 0.92</td>
+                            <td>SLEEP-100K</td>
+                        </tr>
+                        <tr>
+                            <td>Apnea Detection</td>
+                            <td>Sensitivity / Specificity</td>
+                            <td class="highlight-cell">96.8% / 94.5%</td>
+                            <td>91.5% / 89.3%</td>
+                            <td>97.2% / 95.1%</td>
+                            <td>SLEEP-100K</td>
+                        </tr>
+                        <tr>
+                            <td>REM Behavior Detection</td>
+                            <td>F1 Score</td>
+                            <td class="highlight-cell">0.89</td>
+                            <td>0.82</td>
+                            <td>0.91</td>
+                            <td>RBD-5K</td>
+                        </tr>
+                        <tr>
+                            <td>Sleep Quality Prediction</td>
+                            <td>MAE (0-100 scale)</td>
+                            <td class="highlight-cell">4.2</td>
+                            <td>6.8</td>
+                            <td>3.9</td>
+                            <td>WearableSleep-50K</td>
+                        </tr>
+                        <tr>
+                            <td>Disorder Classification</td>
+                            <td>Multi-class F1</td>
+                            <td class="highlight-cell">0.87</td>
+                            <td>0.79</td>
+                            <td>0.90</td>
+                            <td>SleepText-20K</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="benchmark-notes">
+                <h3>Evaluation Protocol</h3>
+                <ul>
+                    <li>All models evaluated on held-out test sets with no patient overlap</li>
+                    <li>Human expert scores averaged across 3 board-certified sleep specialists</li>
+                    <li>Statistical significance tested using paired t-tests (p < 0.001 for all comparisons)</li>
+                    <li>Code for reproducing benchmarks available on <a href="#">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Methods -->
+    <section class="methods-section">
+        <div class="container">
+            <h2>Research Methodology</h2>
+            
+            <div class="methods-grid">
+                <div class="method-card">
+                    <h3>Data Collection & Curation</h3>
+                    <p>
+                        Our training data comes from diverse sources including academic sleep centers, 
+                        consumer wearables, and clinical trials. All data is de-identified and processed 
+                        following HIPAA guidelines.
+                    </p>
+                    <ul>
+                        <li>Multi-site data collection from 15 sleep centers</li>
+                        <li>Automated quality control with manual verification</li>
+                        <li>Balanced representation across demographics</li>
+                        <li>Continuous data augmentation pipeline</li>
+                    </ul>
+                </div>
+
+                <div class="method-card">
+                    <h3>Model Architecture</h3>
+                    <p>
+                        Sleep LLM uses a custom transformer architecture optimized for temporal biosignals 
+                        with innovations in attention mechanisms and multi-scale processing.
+                    </p>
+                    <ul>
+                        <li>Hierarchical temporal attention layers</li>
+                        <li>Multi-resolution signal encoders</li>
+                        <li>Cross-modal fusion modules</li>
+                        <li>Efficient inference optimization</li>
+                    </ul>
+                </div>
+
+                <div class="method-card">
+                    <h3>Validation Framework</h3>
+                    <p>
+                        Rigorous validation through multiple clinical studies ensures our model meets 
+                        the highest standards for medical AI applications.
+                    </p>
+                    <ul>
+                        <li>Multi-center prospective validation</li>
+                        <li>Comparison with gold standard PSG</li>
+                        <li>Inter-rater reliability assessment</li>
+                        <li>Continuous monitoring post-deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborations -->
+    <section class="collaborations-section">
+        <div class="container">
+            <h2>Research Collaborations</h2>
+            <p class="section-lead">
+                Partnering with leading institutions to advance sleep science
+            </p>
+            
+            <div class="collab-grid">
+                <div class="collab-card">
+                    <h4>Stanford Sleep Medicine Center</h4>
+                    <p>Clinical validation and prospective studies</p>
+                </div>
+                <div class="collab-card">
+                    <h4>MIT Media Lab</h4>
+                    <p>Novel sensor development and signal processing</p>
+                </div>
+                <div class="collab-card">
+                    <h4>UCSF Memory & Aging Center</h4>
+                    <p>Sleep-cognition relationships in aging</p>
+                </div>
+                <div class="collab-card">
+                    <h4>Johns Hopkins Sleep Center</h4>
+                    <p>Pediatric sleep disorder detection</p>
+                </div>
+                <div class="collab-card">
+                    <h4>Harvard Medical School</h4>
+                    <p>Circadian rhythm analysis</p>
+                </div>
+                <div class="collab-card">
+                    <h4>Mayo Clinic</h4>
+                    <p>Integration with clinical workflows</p>
+                </div>
+            </div>
+            
+            <div class="collab-cta">
+                <p>Interested in collaborating on sleep research?</p>
+                <a href="../pages/contact.html" class="btn-primary">Contact Our Research Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="research-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Advance Your Sleep Research with AI</h2>
+                <p>
+                    Join our research community and get early access to Sleep LLM for your studies
+                </p>
+                <div class="cta-actions">
+                    <a href="../index.html#alpha-access" class="btn-primary">Request Research Access</a>
+                    <a href="../pages/resources.html#whitepaper" class="btn-secondary">Read Whitepaper</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3>Naptick Sleep LLM</h3>
+                        <p>Transforming sleep science through domain-specific AI</p>
+                    </div>
+                    <div class="footer-contact">
+                        <p><strong>Research Inquiries:</strong> <a href="mailto:research@naptick.ai">research@naptick.ai</a></p>
+                        <p><strong>Partnerships:</strong> <a href="mailto:partnerships@naptick.ai">partnerships@naptick.ai</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="#latest">Latest Publications</a></li>
+                        <li><a href="#datasets">Open Datasets</a></li>
+                        <li><a href="#benchmarks">Benchmarks</a></li>
+                        <li><a href="../pages/resources.html#citations">How to Cite</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../pages/resources.html#documentation">Documentation</a></li>
+                        <li><a href="../pages/resources.html#api">API Reference</a></li>
+                        <li><a href="../pages/resources.html#tutorials">Tutorials</a></li>
+                        <li><a href="../pages/resources.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../pages/about.html">About Us</a></li>
+                        <li><a href="../pages/about.html#careers">Careers</a></li>
+                        <li><a href="../pages/blog.html">Blog</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Naptick AI, Inc. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="../pages/privacy.html">Privacy Policy</a>
+                        <a href="../pages/terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/research-base.js"></script>
+    <script src="../js/research-page.js"></script>
+</body>
+</html>

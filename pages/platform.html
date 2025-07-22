@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naptick Sleep LLM Platform - Advanced AI infrastructure for sleep science with secure APIs, custom fine-tuning, and enterprise-grade architecture">
+    <title>Platform & Technology - Naptick Sleep LLM</title>
+    
+    <!-- Academic Font Stack -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/research-base.css">
+    <link rel="stylesheet" href="../css/platform-page.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html" class="logo">
+                    <span class="logo-text">Naptick</span>
+                    <span class="logo-tagline">Sleep LLM</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="research.html" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="platform.html" class="nav-link active">Platform</a>
+                </li>
+                <li class="nav-item">
+                    <a href="use-cases.html" class="nav-link">Use Cases</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item nav-cta">
+                    <a href="../index.html#alpha-access" class="btn-primary-nav">Get Access</a>
+                </li>
+            </ul>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Enterprise-Grade AI Platform</h1>
+            <p class="hero-lead">
+                Built for scale, security, and scientific rigor. Deploy Sleep LLM through 
+                our cloud infrastructure or on your own private environment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Platform Overview -->
+    <section class="platform-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-text">
+                    <h2>Comprehensive AI Infrastructure</h2>
+                    <p class="lead">
+                        Our platform combines cutting-edge machine learning with robust, 
+                        enterprise-grade infrastructure designed specifically for sleep science applications.
+                    </p>
+                    
+                    <div class="platform-features">
+                        <div class="feature">
+                            <div class="feature-icon">⚡</div>
+                            <h4>Real-time Inference</h4>
+                            <p>12ms latency for live sleep tracking and intervention applications</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🔒</div>
+                            <h4>Security First</h4>
+                            <p>HIPAA-compliant, SOC 2 ready with end-to-end encryption</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🚀</div>
+                            <h4>Scalable Architecture</h4>
+                            <p>Cloud-native design supporting millions of concurrent analyses</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-visual">
+                    <div class="platform-diagram">
+                        <div class="diagram-layer api-layer">
+                            <h4>API Gateway</h4>
+                            <div class="layer-items">
+                                <span>REST API</span>
+                                <span>GraphQL</span>
+                                <span>WebSocket</span>
+                            </div>
+                        </div>
+                        <div class="diagram-layer model-layer">
+                            <h4>AI Models</h4>
+                            <div class="layer-items">
+                                <span>Sleep LLM</span>
+                                <span>Fine-tuning</span>
+                                <span>Inference</span>
+                            </div>
+                        </div>
+                        <div class="diagram-layer data-layer">
+                            <h4>Data Platform</h4>
+                            <div class="layer-items">
+                                <span>Time-series DB</span>
+                                <span>Vector Store</span>
+                                <span>Cache Layer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Deep Dive -->
+    <section id="architecture" class="architecture-section">
+        <div class="container">
+            <h2>Model Architecture</h2>
+            <p class="section-lead">
+                Sleep LLM features a custom transformer architecture specifically designed 
+                for temporal biosignal processing and multimodal sleep data analysis.
+            </p>
+            
+            <div class="architecture-details">
+                <div class="arch-component">
+                    <div class="component-header">
+                        <div class="component-icon">🧠</div>
+                        <h3>Foundation Transformer</h3>
+                    </div>
+                    <p>
+                        Our base model uses a modified transformer architecture with hierarchical 
+                        attention mechanisms optimized for long-sequence biosignals.
+                    </p>
+                    <ul class="tech-specs">
+                        <li>12 billion parameters</li>
+                        <li>32-layer transformer</li>
+                        <li>1024-dimensional embeddings</li>
+                        <li>Multi-head attention (16 heads)</li>
+                    </ul>
+                </div>
+                
+                <div class="arch-component">
+                    <div class="component-header">
+                        <div class="component-icon">📊</div>
+                        <h3>Time-Series Encoders</h3>
+                    </div>
+                    <p>
+                        Specialized encoders process multi-channel physiological signals 
+                        with temporal convolutions and attention pooling.
+                    </p>
+                    <ul class="tech-specs">
+                        <li>Multi-scale temporal convolutions</li>
+                        <li>Adaptive sampling rates</li>
+                        <li>Signal-specific normalization</li>
+                        <li>Artifact detection and removal</li>
+                    </ul>
+                </div>
+                
+                <div class="arch-component">
+                    <div class="component-header">
+                        <div class="component-icon">🌙</div>
+                        <h3>Context Integration</h3>
+                    </div>
+                    <p>
+                        Contextual information including medications, environmental factors, 
+                        and lifestyle data is integrated through cross-attention mechanisms.
+                    </p>
+                    <ul class="tech-specs">
+                        <li>Cross-modal attention layers</li>
+                        <li>Temporal context windows</li>
+                        <li>Hierarchical feature fusion</li>
+                        <li>Causal masking for inference</li>
+                    </ul>
+                </div>
+                
+                <div class="arch-component">
+                    <div class="component-header">
+                        <div class="component-icon">🎯</div>
+                        <h3>Task-Specific Heads</h3>
+                    </div>
+                    <p>
+                        Multiple specialized output heads enable simultaneous sleep staging, 
+                        disorder detection, and personalized recommendation generation.
+                    </p>
+                    <ul class="tech-specs">
+                        <li>Multi-task learning framework</li>
+                        <li>Shared representations</li>
+                        <li>Task-specific fine-tuning</li>
+                        <li>Uncertainty quantification</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics -->
+    <section id="performance" class="performance-section">
+        <div class="container">
+            <h2>Performance & Benchmarks</h2>
+            
+            <div class="performance-grid">
+                <div class="perf-card">
+                    <h3>Inference Speed</h3>
+                    <div class="perf-value">12ms</div>
+                    <p>Average inference time for 8-hour sleep analysis</p>
+                    <div class="perf-chart">
+                        <div class="chart-bar" style="height: 20%;">Traditional</div>
+                        <div class="chart-bar" style="height: 35%;">Deep Learning</div>
+                        <div class="chart-bar" style="height: 100%;">Sleep LLM</div>
+                    </div>
+                </div>
+                
+                <div class="perf-card">
+                    <h3>Accuracy</h3>
+                    <div class="perf-value">94.2%</div>
+                    <p>Sleep stage classification accuracy</p>
+                    <div class="accuracy-breakdown">
+                        <div class="stage-accuracy">
+                            <span>REM:</span> <span>96.8%</span>
+                        </div>
+                        <div class="stage-accuracy">
+                            <span>Deep:</span> <span>93.5%</span>
+                        </div>
+                        <div class="stage-accuracy">
+                            <span>Light:</span> <span>91.7%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="perf-card">
+                    <h3>Throughput</h3>
+                    <div class="perf-value">10K+</div>
+                    <p>Concurrent analyses supported</p>
+                    <div class="throughput-meter">
+                        <div class="meter-bar">
+                            <div class="meter-fill" style="width: 85%;"></div>
+                        </div>
+                        <span class="meter-label">85% capacity utilized</span>
+                    </div>
+                </div>
+                
+                <div class="perf-card">
+                    <h3>Reliability</h3>
+                    <div class="perf-value">99.9%</div>
+                    <p>Uptime SLA with automatic failover</p>
+                    <div class="reliability-stats">
+                        <div class="stat">
+                            <span>MTBF:</span> <span>8760h</span>
+                        </div>
+                        <div class="stat">
+                            <span>MTTR:</span> <span>&lt;30s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Documentation -->
+    <section id="api" class="api-section">
+        <div class="container">
+            <h2>Developer API</h2>
+            <p class="section-lead">
+                Simple, powerful APIs for integrating Sleep LLM into your applications
+            </p>
+            
+            <div class="api-examples">
+                <div class="api-tabs">
+                    <button class="tab active" data-tab="rest">REST API</button>
+                    <button class="tab" data-tab="python">Python SDK</button>
+                    <button class="tab" data-tab="nodejs">Node.js</button>
+                </div>
+                
+                <div class="api-content">
+                    <div class="tab-pane active" id="rest">
+                        <h3>Analyze Sleep Data</h3>
+                        <div class="code-block">
+                            <pre><code>POST /api/v1/analyze
+Content-Type: application/json
+Authorization: Bearer YOUR_API_KEY
+
+{
+  "data": {
+    "psg": "base64_encoded_edf_file",
+    "duration_hours": 8,
+    "patient_age": 35,
+    "medications": ["melatonin"]
+  },
+  "tasks": ["sleep_staging", "apnea_detection", "quality_score"]
+}</code></pre>
+                        </div>
+                        
+                        <h4>Response</h4>
+                        <div class="code-block">
+                            <pre><code>{
+  "analysis_id": "analysis_12345",
+  "status": "completed",
+  "results": {
+    "sleep_stages": {
+      "rem_percentage": 22.3,
+      "deep_percentage": 18.7,
+      "light_percentage": 54.2,
+      "wake_percentage": 4.8
+    },
+    "apnea_events": {
+      "count": 12,
+      "severity": "mild",
+      "ahi": 2.1
+    },
+    "quality_score": 78
+  },
+  "confidence": 0.94
+}</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="python">
+                        <h3>Python SDK</h3>
+                        <div class="code-block">
+                            <pre><code>from naptick import SleepLLM
+
+# Initialize client
+client = SleepLLM(api_key="your_api_key")
+
+# Analyze sleep data
+result = client.analyze(
+    psg_file="path/to/sleep_study.edf",
+    tasks=["sleep_staging", "apnea_detection"],
+    patient_info={
+        "age": 35,
+        "medications": ["melatonin"]
+    }
+)
+
+print(f"Sleep efficiency: {result.sleep_efficiency}%")
+print(f"REM sleep: {result.stages.rem_percentage}%")</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="nodejs">
+                        <h3>Node.js SDK</h3>
+                        <div class="code-block">
+                            <pre><code>const SleepLLM = require('@naptick/sleep-llm');
+
+const client = new SleepLLM({
+  apiKey: process.env.NAPTICK_API_KEY
+});
+
+async function analyzeSleep() {
+  const result = await client.analyze({
+    psgData: fs.readFileSync('sleep_study.edf'),
+    tasks: ['sleep_staging', 'quality_score'],
+    patientAge: 35
+  });
+  
+  console.log('Analysis complete:', result);
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="api-features">
+                <div class="api-feature">
+                    <h4>🚀 Fast & Reliable</h4>
+                    <p>99.9% uptime SLA with global CDN</p>
+                </div>
+                <div class="api-feature">
+                    <h4>📚 Comprehensive Docs</h4>
+                    <p>Interactive API explorer and tutorials</p>
+                </div>
+                <div class="api-feature">
+                    <h4>🛡️ Enterprise Security</h4>
+                    <p>OAuth 2.0, rate limiting, audit logs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="security-section">
+        <div class="container">
+            <h2>Security & Compliance</h2>
+            <p class="section-lead">
+                Enterprise-grade security designed for healthcare and research environments
+            </p>
+            
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-icon">🔐</div>
+                    <h3>Data Encryption</h3>
+                    <ul>
+                        <li>AES-256 encryption at rest</li>
+                        <li>TLS 1.3 for data in transit</li>
+                        <li>Hardware security modules (HSMs)</li>
+                        <li>Key rotation and management</li>
+                    </ul>
+                </div>
+                
+                <div class="security-card">
+                    <div class="security-icon">🏥</div>
+                    <h3>Healthcare Compliance</h3>
+                    <ul>
+                        <li>HIPAA compliant infrastructure</li>
+                        <li>Business Associate Agreements</li>
+                        <li>GDPR compliance for EU data</li>
+                        <li>Regular compliance audits</li>
+                    </ul>
+                </div>
+                
+                <div class="security-card">
+                    <div class="security-icon">🛡️</div>
+                    <h3>Access Controls</h3>
+                    <ul>
+                        <li>Multi-factor authentication</li>
+                        <li>Role-based access control</li>
+                        <li>API key management</li>
+                        <li>Session monitoring</li>
+                    </ul>
+                </div>
+                
+                <div class="security-card">
+                    <div class="security-icon">📊</div>
+                    <h3>Monitoring & Auditing</h3>
+                    <ul>
+                        <li>Real-time security monitoring</li>
+                        <li>Comprehensive audit logs</li>
+                        <li>Anomaly detection</li>
+                        <li>Incident response procedures</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="compliance-badges">
+                <div class="badge">
+                    <img src="#" alt="SOC 2 Type II" />
+                    <span>SOC 2 Type II<br><small>In Progress</small></span>
+                </div>
+                <div class="badge">
+                    <img src="#" alt="HIPAA Compliant" />
+                    <span>HIPAA<br><small>Compliant</small></span>
+                </div>
+                <div class="badge">
+                    <img src="#" alt="GDPR Compliant" />
+                    <span>GDPR<br><small>Compliant</small></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fine-tuning Section -->
+    <section class="finetuning-section">
+        <div class="container">
+            <h2>Custom Fine-tuning</h2>
+            <p class="section-lead">
+                Adapt Sleep LLM to your specific datasets and use cases with our 
+                secure fine-tuning infrastructure
+            </p>
+            
+            <div class="finetuning-process">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Data Upload</h3>
+                    <p>Securely upload your labeled sleep data through our encrypted interface</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Model Training</h3>
+                    <p>Our platform automatically fine-tunes the model on your data using isolated compute</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Validation</h3>
+                    <p>Comprehensive testing ensures your custom model meets quality standards</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Deployment</h3>
+                    <p>Deploy your custom model with the same APIs and performance guarantees</p>
+                </div>
+            </div>
+            
+            <div class="finetuning-features">
+                <div class="feature-card">
+                    <h4>🔒 Data Isolation</h4>
+                    <p>Your data never leaves your designated environment during training</p>
+                </div>
+                <div class="feature-card">
+                    <h4>⚡ Efficient Training</h4>
+                    <p>Advanced techniques like LoRA and QLoRA for fast, resource-efficient fine-tuning</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📊 Performance Tracking</h4>
+                    <p>Real-time metrics and validation to monitor training progress</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Options -->
+    <section class="integration-section">
+        <div class="container">
+            <h2>Integration Options</h2>
+            
+            <div class="integration-tabs">
+                <button class="int-tab active" data-tab="cloud">Cloud Deployment</button>
+                <button class="int-tab" data-tab="onprem">On-Premises</button>
+                <button class="int-tab" data-tab="hybrid">Hybrid</button>
+            </div>
+            
+            <div class="integration-content">
+                <div class="int-pane active" id="cloud">
+                    <div class="deployment-option">
+                        <h3>🌐 Cloud-First Platform</h3>
+                        <p>Get started immediately with our fully managed cloud infrastructure</p>
+                        <ul>
+                            <li>Global availability with 99.9% uptime SLA</li>
+                            <li>Auto-scaling based on demand</li>
+                            <li>Built-in monitoring and alerts</li>
+                            <li>Regional data residency options</li>
+                        </ul>
+                        <a href="#" class="btn-primary">Start Free Trial</a>
+                    </div>
+                </div>
+                
+                <div class="int-pane" id="onprem">
+                    <div class="deployment-option">
+                        <h3>🏢 On-Premises Deployment</h3>
+                        <p>Full control with Sleep LLM deployed in your environment</p>
+                        <ul>
+                            <li>Complete data sovereignty</li>
+                            <li>Custom security configurations</li>
+                            <li>Integration with existing infrastructure</li>
+                            <li>Dedicated support and training</li>
+                        </ul>
+                        <a href="#" class="btn-primary">Contact Sales</a>
+                    </div>
+                </div>
+                
+                <div class="int-pane" id="hybrid">
+                    <div class="deployment-option">
+                        <h3>🔄 Hybrid Architecture</h3>
+                        <p>Best of both worlds with flexible deployment options</p>
+                        <ul>
+                            <li>Sensitive data processing on-premises</li>
+                            <li>Cloud-based model updates</li>
+                            <li>Centralized management dashboard</li>
+                            <li>Seamless failover and redundancy</li>
+                        </ul>
+                        <a href="#" class="btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="platform-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build with Sleep LLM?</h2>
+                <p>
+                    Join leading healthcare organizations and research institutions 
+                    already using our platform
+                </p>
+                <div class="cta-actions">
+                    <a href="../index.html#alpha-access" class="btn-primary">Get API Access</a>
+                    <a href="#" class="btn-secondary">Schedule Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3>Naptick Sleep LLM</h3>
+                        <p>Enterprise AI platform for sleep science</p>
+                    </div>
+                    <div class="footer-contact">
+                        <p><strong>Sales:</strong> <a href="mailto:sales@naptick.ai">sales@naptick.ai</a></p>
+                        <p><strong>Support:</strong> <a href="mailto:support@naptick.ai">support@naptick.ai</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#architecture">Architecture</a></li>
+                        <li><a href="#api">API Reference</a></li>
+                        <li><a href="#security">Security</a></li>
+                        <li><a href="#performance">Performance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Developers</h4>
+                    <ul>
+                        <li><a href="../pages/resources.html#documentation">Documentation</a></li>
+                        <li><a href="../pages/resources.html#sdks">SDKs</a></li>
+                        <li><a href="../pages/resources.html#tutorials">Tutorials</a></li>
+                        <li><a href="../pages/resources.html#community">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="../pages/blog.html">Blog</a></li>
+                        <li><a href="../pages/about.html#careers">Careers</a></li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Naptick AI, Inc. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="../pages/privacy.html">Privacy</a>
+                        <a href="../pages/terms.html">Terms</a>
+                        <a href="../pages/security.html">Security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/research-base.js"></script>
+    <script src="../js/platform-page.js"></script>
+</body>
+</html>
